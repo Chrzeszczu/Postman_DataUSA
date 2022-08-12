@@ -19,8 +19,8 @@
 									"const response = pm.response.json();\r",
 									"\r",
 									"var Categories = [\"State\",\"Congressional%20District\",\"MSA\",\"PUMA\",\"County\",\"Place\"];\r",
-									"pm.variables.set('CategoriesF', Categories);\r",
-									"pm.variables.set(\"CATEGORY\", Categories[Math.floor(Math.random() * Categories.length)]);\r",
+									"pm.globals.set('CategoriesF', Categories);\r",
+									"pm.globals.set(\"CATEGORY\", Categories[Math.floor(Math.random() * Categories.length)]);\r",
 									"\r",
 									"pm.variables.get(\"CATEGORY\");\r",
 									"\r",
@@ -49,7 +49,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{dataUsaSearch}}/?limit=100&dimension=Geography&q=",
+							"raw": "{{dataUsaSearch}}/?limit=100&dimension=Geography&hierarchy={{CATEGORY}}&q=",
 							"host": [
 								"{{dataUsaSearch}}"
 							],
@@ -69,8 +69,7 @@
 								{
 									"key": "hierarchy",
 									"value": "{{CATEGORY}}",
-									"description": "Sub Filter",
-									"disabled": true
+									"description": "Sub Filter"
 								},
 								{
 									"key": "q",
@@ -646,19 +645,19 @@
 	],
 	"variable": [
 		{
-			"id": "388472c3-895d-4e3c-b8a0-387d2fa9a51a",
+			"id": "c7852b3f-64c1-40fa-bc0c-d592ef279006",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "3969f4e6-264a-4f25-a0ce-98efe54818a0",
+			"id": "e197948e-827c-4715-bef0-113fa92e2978",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "5c243568-41a1-497c-874e-9f1ab984b60b",
+			"id": "4405f3f9-c660-4657-9819-2b532f810b55",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
