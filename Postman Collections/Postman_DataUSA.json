@@ -267,7 +267,7 @@
 									"\r",
 									"var Categories = [\"Carnegie%20Parent\",\"Carnegie\",\"University\"];\r",
 									"pm.globals.set('CategoriesF', Categories);\r",
-									"pm.globals.set(\"CATEGOTY\", Categories[Math.floor(Math.random() * Categories.length)]);\r",
+									"pm.globals.set(\"CATEGORY\", Categories[Math.floor(Math.random() * Categories.length)]);\r",
 									"\r",
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
@@ -285,7 +285,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{dataUsaSearch}}/?limit=100&dimension=University&hierarchy={{CATEGOTY}}&q=",
+							"raw": "{{dataUsaSearch}}/?limit=100&dimension=University&hierarchy={{CATEGORY}}&q=",
 							"host": [
 								"{{dataUsaSearch}}"
 							],
@@ -303,7 +303,7 @@
 								},
 								{
 									"key": "hierarchy",
-									"value": "{{CATEGOTY}}",
+									"value": "{{CATEGORY}}",
 									"description": "Sub Filter"
 								},
 								{
@@ -624,19 +624,19 @@
 	],
 	"variable": [
 		{
-			"id": "f7097b5c-f1f2-4723-bb82-15b335b1c7da",
+			"id": "ee236846-9280-4375-99b9-c5d16a8cb79a",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "09d07265-9a1d-483f-88c7-c9eff467a56b",
+			"id": "3bd13932-50b6-412a-bc87-47d128230303",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "dcce150e-0338-4ef4-9309-900be5ee7dbc",
+			"id": "a190ebb4-711c-42f2-82b6-6c397cfd4b6a",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
