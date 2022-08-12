@@ -332,7 +332,7 @@
 									"const response = pm.response.json();\r",
 									"\r",
 									"var Categories = [\"NAPCS%20Section\",\"NAPCS%20Group\",\"NAPCS%20Class\"];\r",
-									"pm.globals.set('Cities', Categories);\r",
+									"pm.globals.set('Categories', Categories);\r",
 									"pm.globals.set(\"CATEGOTY\", Categories[Math.floor(Math.random() * Categories.length)]);"
 								],
 								"type": "text/javascript"
@@ -624,19 +624,19 @@
 	],
 	"variable": [
 		{
-			"id": "f372153a-e82e-4ff8-baab-53f0ed8d82b5",
+			"id": "eac07175-1221-4ea0-b700-16f805672bf5",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "922222fc-669c-4cc8-bf3c-2eca326f8484",
+			"id": "9f5b93ac-b151-4591-8081-352882bbadd1",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "c6fc36f4-c684-431b-9c16-30046ef3ae95",
+			"id": "6cc0db6d-8cae-4b10-b1fa-2fc725d2d091",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
