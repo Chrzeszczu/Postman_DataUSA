@@ -328,7 +328,7 @@
 									"\r",
 									"var Categories = [\"NAPCS%20Section\",\"NAPCS%20Group\",\"NAPCS%20Class\"];\r",
 									"pm.globals.set('CategoriesF', Categories);\r",
-									"pm.globals.set(\"CATEGOTY\", Categories[Math.floor(Math.random() * Categories.length)]);\r",
+									"pm.globals.set(\"CATEGORY\", Categories[Math.floor(Math.random() * Categories.length)]);\r",
 									"\r",
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
@@ -346,7 +346,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{dataUsaSearch}}/?limit=100&dimension=NAPCS&hierarchy={{CATEGOTY}}&q=",
+							"raw": "{{dataUsaSearch}}/?limit=100&dimension=NAPCS&hierarchy={{CATEGORY}}&q=",
 							"host": [
 								"{{dataUsaSearch}}"
 							],
@@ -364,7 +364,7 @@
 								},
 								{
 									"key": "hierarchy",
-									"value": "{{CATEGOTY}}",
+									"value": "{{CATEGORY}}",
 									"description": "Sub Filter"
 								},
 								{
@@ -624,19 +624,19 @@
 	],
 	"variable": [
 		{
-			"id": "ee236846-9280-4375-99b9-c5d16a8cb79a",
+			"id": "da9833c5-776b-4fd2-921a-8b996e8fc683",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "3bd13932-50b6-412a-bc87-47d128230303",
+			"id": "caad859b-de7c-4ad5-a94a-f71883ec9efa",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "a190ebb4-711c-42f2-82b6-6c397cfd4b6a",
+			"id": "e5ba7f60-559c-4b7e-8c75-dfbfa79c0147",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
