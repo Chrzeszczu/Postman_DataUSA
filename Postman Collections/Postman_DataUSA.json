@@ -635,19 +635,19 @@
 	],
 	"variable": [
 		{
-			"id": "05d4b99b-c084-4b83-9556-729c303095cc",
+			"id": "f923043c-8f5a-412a-b846-0f3528fd54fb",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "441f8e61-bd5e-4a2a-9894-f0c87a4c9730",
+			"id": "7d86886e-4f18-404b-8ed2-f6135085f566",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "6a3680e1-ea3b-4bf1-af24-a60f1f3ba99c",
+			"id": "cd3e4146-88dd-4727-b638-3b412b511a95",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
