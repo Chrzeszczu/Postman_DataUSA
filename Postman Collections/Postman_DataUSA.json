@@ -162,7 +162,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{dataUsaSearch}}/?limit=100&dimension=PUMS%20Occupation&hierarchy={{CATEGOTY}}&q=",
+							"raw": "{{dataUsaSearch}}/?limit=100&dimension=PUMS%20Occupation&hierarchy={{CATEGORY}}&q=",
 							"host": [
 								"{{dataUsaSearch}}"
 							],
@@ -180,7 +180,7 @@
 								},
 								{
 									"key": "hierarchy",
-									"value": "{{CATEGOTY}}",
+									"value": "{{CATEGORY}}",
 									"description": "Sub Filter"
 								},
 								{
@@ -624,19 +624,19 @@
 	],
 	"variable": [
 		{
-			"id": "f3ae03b5-643d-43f3-8757-158d94b818f2",
+			"id": "20ebeaa3-94a2-4474-82e5-03229f86c5a5",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "53de57ad-eb1b-4904-a4b1-1e56c1f981fc",
+			"id": "f066bf4f-4012-45a0-a79d-c9ce8461da25",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "c0533aaf-67a5-41f5-b76b-4f3367a50ced",
+			"id": "4b1b1077-ebae-4759-b042-4c7a785f18dc",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
