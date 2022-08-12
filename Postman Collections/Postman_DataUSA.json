@@ -150,6 +150,8 @@
 									"pm.globals.set('CategoriesF', Categories);\r",
 									"pm.globals.set(\"CATEGORY\", Categories[Math.floor(Math.random() * Categories.length)]);\r",
 									"\r",
+									"pm.globals.unset(\"CATEGORY\");\r",
+									"\r",
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"});"
@@ -628,19 +630,19 @@
 	],
 	"variable": [
 		{
-			"id": "32d84192-f188-476c-b695-2d76faf5af50",
+			"id": "47cb854f-a904-4778-a891-c392ecca1ba8",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "9aa1734e-a654-44e1-8506-9c1a3e79cc45",
+			"id": "7c998404-5f8a-4b1b-832a-3c60df18fe00",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "575c3d72-c92b-43bc-ae01-dc305a015af2",
+			"id": "55615cea-7c3b-4a38-88d7-65a3f6859c8b",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
