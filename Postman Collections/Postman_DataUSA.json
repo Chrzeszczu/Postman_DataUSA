@@ -206,6 +206,8 @@
 							"script": {
 								"id": "f3383219-63d5-4cf8-b2a1-59f35d948465",
 								"exec": [
+									"setTimeout(function(){}, 1000);\r",
+									"\r",
 									"const response = pm.response.json();\r",
 									"\r",
 									"var Categories = [\"CIP2\",\"CIP4\",\"CIP6\"];\r",
@@ -628,19 +630,19 @@
 	],
 	"variable": [
 		{
-			"id": "f156fe1a-373d-4c10-b6d4-a599e1070399",
+			"id": "050e9017-3faf-4183-94b4-3b63f3f99fd8",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "10931018-4fbb-46ab-83a2-7b927c531165",
+			"id": "7096269c-8a54-4fe0-92d1-cdf6a5b127f5",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "92e3cfc4-15b8-46a3-9d37-dde86f03acd7",
+			"id": "ff4e0ad9-3acb-40a2-867f-84b1604645c5",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
