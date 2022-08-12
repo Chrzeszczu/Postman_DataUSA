@@ -19,7 +19,7 @@
 									"const response = pm.response.json();\r",
 									"\r",
 									"var Categories = [\"State\",\"Congressional%20District\",\"MSA\",\"PUMA\",\"County\",\"Place\"];\r",
-									"pm.globals.set('CategoriesF', Categories);\r",
+									"\r",
 									"pm.globals.set(\"CATEGOTY\", Categories[Math.floor(Math.random() * Categories.length)]);\r",
 									"\r",
 									"pm.test(\"Status code is 200\", function () {\r",
@@ -624,19 +624,19 @@
 	],
 	"variable": [
 		{
-			"id": "8e595c7c-9947-4846-9334-82b399edcf02",
+			"id": "7aa2b90e-c44c-4576-a7bb-8049d95e316b",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "fc1e7052-345e-45cd-af33-dad51322ed76",
+			"id": "b9bd5981-dc64-41b8-bd00-c30aecdc77b9",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "571dc664-250b-406f-90ff-77d0fe28065b",
+			"id": "73063d52-1928-4c45-9ad2-3965e76d276d",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
