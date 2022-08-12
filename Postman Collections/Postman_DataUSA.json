@@ -143,6 +143,8 @@
 							"script": {
 								"id": "f3383219-63d5-4cf8-b2a1-59f35d948465",
 								"exec": [
+									"setTimeout(function(){}, 1000);\r",
+									"\r",
 									"const response = pm.response.json();\r",
 									"\r",
 									"var Categories = [\"Major%20Occupation%20Group\",\"Broad%20Occupation\",\"Minor%20Occupation%20Group\",\"Detailed%20Occupation\"];\r",
@@ -626,19 +628,19 @@
 	],
 	"variable": [
 		{
-			"id": "f10fcb26-99ae-44c1-94c7-345aa739e222",
+			"id": "f156fe1a-373d-4c10-b6d4-a599e1070399",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "0089ddd5-33bf-4229-9688-707c57fb5b2c",
+			"id": "10931018-4fbb-46ab-83a2-7b927c531165",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "c623d11d-875a-4f9d-b4d3-acf3fd022c75",
+			"id": "92e3cfc4-15b8-46a3-9d37-dde86f03acd7",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
