@@ -142,9 +142,9 @@
 								"exec": [
 									"const response = pm.response.json();\r",
 									"\r",
-									"var Categories3 = [\"Major%20Occupation%20Group\",\"Broad%20Occupation\",\"Minor%20Occupation%20Group\",\"Detailed%20Occupation\"];\r",
-									"pm.globals.set('Categories3', Categories3);\r",
-									"pm.globals.set(\"CATEGOTY3\", Categories3[Math.floor(Math.random() * Categories.length)]);\r",
+									"var Categories = [\"Major%20Occupation%20Group\",\"Broad%20Occupation\",\"Minor%20Occupation%20Group\",\"Detailed%20Occupation\"];\r",
+									"pm.globals.set('CategoriesF', Categories);\r",
+									"pm.globals.set(\"CATEGOTY3\", CategoriesF[Math.floor(Math.random() * Categories.length)]);\r",
 									"\r",
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
@@ -624,19 +624,19 @@
 	],
 	"variable": [
 		{
-			"id": "17f209de-07d6-4a55-a033-348ce8c8103e",
+			"id": "bebab2ba-a0b9-444c-8b68-ef0d85294708",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "d0830c05-85aa-43c7-a674-9b279ebae78b",
+			"id": "f3d66769-6283-4c59-b25c-997dfc6f32a3",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "7a994026-5f75-43b0-abf6-40f1ab56b7ca",
+			"id": "32da63d5-8df2-4bac-9a70-178d95b8210e",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
