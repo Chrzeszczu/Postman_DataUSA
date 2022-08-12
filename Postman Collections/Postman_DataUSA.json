@@ -20,7 +20,7 @@
 									"\r",
 									"var Categories = [\"State\",\"Congressional%20District\",\"MSA\",\"PUMA\",\"County\",\"Place\"];\r",
 									"pm.globals.set('CategoriesF', Categories);\r",
-									"pm.globals.set(\"CATEGOTY\", Categories[Math.floor(Math.random() * Categories.length)]);\r",
+									"pm.globals.set(\"CATEGORY\", Categories[Math.floor(Math.random() * Categories.length)]);\r",
 									"\r",
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
@@ -624,19 +624,19 @@
 	],
 	"variable": [
 		{
-			"id": "54e1c99c-d36e-41bd-82ba-f485f89a0c67",
+			"id": "477c21e1-58d7-4866-b69a-375f8236383a",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "9e9b9e57-376a-4642-ad4f-a1bbb47cbd5b",
+			"id": "8f5b55a9-e7f7-4deb-865c-73300687af67",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "0ae2c2a4-d58b-42f3-b053-9840c75d7ab9",
+			"id": "63842410-e7a4-4849-98b1-aa4fb673dcdc",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
