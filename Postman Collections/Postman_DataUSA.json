@@ -1,0 +1,647 @@
+{
+	"info": {
+		"_postman_id": "c9c3d7a9-64be-447c-97c2-6acd86922229",
+		"name": "Data USA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Searches",
+			"item": [
+				{
+					"name": "Search by location",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f3383219-63d5-4cf8-b2a1-59f35d948465",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"const response = pm.response.json();\r",
+									"\r",
+									"\r",
+									"var Categories = [\"State\",\"Congressional%20District\",\"MSA\",\"PUMA\",\"County\",\"Place\"];\r",
+									"pm.globals.set('Cities', Categories);\r",
+									"pm.globals.set(\"CATEGOTY\", Categories[Math.floor(Math.random() * Categories.length)]);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "327b719f-1034-4e15-b7d9-03d174330f06",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dataUsaSearch}}/?limit=100&dimension=Geography&hierarchy={{CATEGOTY}}&q=",
+							"host": [
+								"{{dataUsaSearch}}"
+							],
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "100"
+								},
+								{
+									"key": "dimension",
+									"value": "Geography",
+									"description": "Filter"
+								},
+								{
+									"key": "hierarchy",
+									"value": "{{CATEGOTY}}",
+									"description": "Sub Filter"
+								},
+								{
+									"key": "q",
+									"value": "",
+									"description": "Question to search"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search by industry",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f3383219-63d5-4cf8-b2a1-59f35d948465",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"const response = pm.response.json();\r",
+									"\r",
+									"\r",
+									"var Categories = [\"Industry%20Sub-Sector\",\"Industry%20Sector\",\"Industry%20Group\"];\r",
+									"pm.globals.set('Cities', Categories);\r",
+									"pm.globals.set(\"CATEGOTY\", Categories[Math.floor(Math.random() * Categories.length)]);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "54755c17-b409-424c-ad45-1cdbb96bf536",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dataUsaSearch}}/?limit=100&dimension=PUMS%20Industry&hierarchy={{CATEGOTY}}&q=",
+							"host": [
+								"{{dataUsaSearch}}"
+							],
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "100"
+								},
+								{
+									"key": "dimension",
+									"value": "PUMS%20Industry"
+								},
+								{
+									"key": "hierarchy",
+									"value": "{{CATEGOTY}}",
+									"description": "Sub Filter"
+								},
+								{
+									"key": "q",
+									"value": "",
+									"description": "Question to search"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search by occupation",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f3383219-63d5-4cf8-b2a1-59f35d948465",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"const response = pm.response.json();\r",
+									"\r",
+									"var Categories = [\"Major%20Occupation%20Group\",\"Broad%20Occupation\",\"Minor%20Occupation%20Group\",\"Detailed%20Occupation\"];\r",
+									"pm.globals.set('Cities', Categories);\r",
+									"pm.globals.set(\"CATEGOTY\", Categories[Math.floor(Math.random() * Categories.length)]);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "b51ac8de-cde6-4e45-bd23-707b41ca8728",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dataUsaSearch}}/?limit=100&dimension=PUMS%20Occupation&hierarchy={{CATEGOTY}}&q=",
+							"host": [
+								"{{dataUsaSearch}}"
+							],
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "100"
+								},
+								{
+									"key": "dimension",
+									"value": "PUMS%20Occupation"
+								},
+								{
+									"key": "hierarchy",
+									"value": "{{CATEGOTY}}",
+									"description": "Sub Filter"
+								},
+								{
+									"key": "q",
+									"value": "",
+									"description": "Question to search"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search by degrees",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f3383219-63d5-4cf8-b2a1-59f35d948465",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"const response = pm.response.json();\r",
+									"\r",
+									"var Categories = [\"CIP2\",\"CIP4\",\"CIP6\"];\r",
+									"pm.globals.set('Cities', Categories);\r",
+									"pm.globals.set(\"CATEGOTY\", Categories[Math.floor(Math.random() * Categories.length)]);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "c029c62a-ebff-4ed0-9f25-81e79af1fb91",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dataUsaSearch}}/?limit=100&dimension=CIP&hierarchy={{CATEGOTY}}&q=",
+							"host": [
+								"{{dataUsaSearch}}"
+							],
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "100"
+								},
+								{
+									"key": "dimension",
+									"value": "CIP",
+									"description": "Main Filter"
+								},
+								{
+									"key": "hierarchy",
+									"value": "{{CATEGOTY}}",
+									"description": "Sub Filter"
+								},
+								{
+									"key": "q",
+									"value": "",
+									"description": "Question to search"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search by universities",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f3383219-63d5-4cf8-b2a1-59f35d948465",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"const response = pm.response.json();\r",
+									"\r",
+									"var Categories = [\"Carnegie%20Parent\",\"Carnegie\",\"University\"];\r",
+									"pm.globals.set('Cities', Categories);\r",
+									"pm.globals.set(\"CATEGOTY\", Categories[Math.floor(Math.random() * Categories.length)]);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "b40d5058-cb1b-4fba-90ef-b319351b1591",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dataUsaSearch}}/?limit=100&dimension=University&hierarchy={{CATEGOTY}}&q=",
+							"host": [
+								"{{dataUsaSearch}}"
+							],
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "100"
+								},
+								{
+									"key": "dimension",
+									"value": "University"
+								},
+								{
+									"key": "hierarchy",
+									"value": "{{CATEGOTY}}",
+									"description": "Sub Filter"
+								},
+								{
+									"key": "q",
+									"value": "",
+									"description": "Question to search"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search by products & services",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f3383219-63d5-4cf8-b2a1-59f35d948465",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"const response = pm.response.json();\r",
+									"\r",
+									"var Categories = [\"NAPCS%20Section\",\"NAPCS%20Group\",\"NAPCS%20Class\"];\r",
+									"pm.globals.set('Cities', Categories);\r",
+									"pm.globals.set(\"CATEGOTY\", Categories[Math.floor(Math.random() * Categories.length)]);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "69c086c4-4816-4e68-90ab-d33124b036a1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dataUsaSearch}}/?limit=100&dimension=NAPCS&hierarchy={{CATEGOTY}}&q=",
+							"host": [
+								"{{dataUsaSearch}}"
+							],
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "100"
+								},
+								{
+									"key": "dimension",
+									"value": "NAPCS"
+								},
+								{
+									"key": "hierarchy",
+									"value": "{{CATEGOTY}}",
+									"description": "Sub Filter"
+								},
+								{
+									"key": "q",
+									"value": "",
+									"description": "Question to search"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "d4e3d946-5b6a-4c81-9ad5-b6968715d684"
+		},
+		{
+			"name": "Nation Population",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f3383219-63d5-4cf8-b2a1-59f35d948465",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"const response = pm.response.json();\r",
+							"\r",
+							"console.log(response);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "439b7662-65b7-43a0-a652-a193e8f53353",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{dataUsa}}/data?drilldowns=Nation&measures=Population",
+					"host": [
+						"{{dataUsa}}"
+					],
+					"path": [
+						"data"
+					],
+					"query": [
+						{
+							"key": "drilldowns",
+							"value": "Nation"
+						},
+						{
+							"key": "measures",
+							"value": "Population"
+						},
+						{
+							"key": "year",
+							"value": "latest",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Home main site",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f3383219-63d5-4cf8-b2a1-59f35d948465",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"const response = pm.response.json();\r",
+							"\r",
+							"console.log(response);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "4a6bc37b-c138-4c9b-a2d4-62de43f152da",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{uraniumDataUsa}}/home"
+			},
+			"response": []
+		},
+		{
+			"name": "Data about state",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f3383219-63d5-4cf8-b2a1-59f35d948465",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"const response = pm.response.json();\r",
+							"\r",
+							"console.log(response);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "ae29d90a-21f2-4ccf-866d-7bfe27757ee2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{uraniumDataUsa}}/geo/similar/:state",
+					"host": [
+						"{{uraniumDataUsa}}"
+					],
+					"path": [
+						"geo",
+						"similar",
+						":state"
+					],
+					"variable": [
+						{
+							"key": "state",
+							"value": "washington",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Stories",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f3383219-63d5-4cf8-b2a1-59f35d948465",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"const response = pm.response.json();\r",
+							"\r",
+							"console.log(response);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "ece0ba33-34ee-42b1-a2d1-a201810724a4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{uraniumDataUsa}}/storyLegacy/:MM-DD-RRRR_NAME",
+					"host": [
+						"{{uraniumDataUsa}}"
+					],
+					"path": [
+						"storyLegacy",
+						":MM-DD-RRRR_NAME"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"variable": [
+						{
+							"key": "MM-DD-RRRR_NAME",
+							"value": "06-12-2017_medicare-physicians",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cart",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f3383219-63d5-4cf8-b2a1-59f35d948465",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"const response = pm.response.json();\r",
+							"\r",
+							"console.log(response);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "d40e741f-5229-4fa2-bd44-45445ae682ad",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{uraniumDataUsa}}/cart/levels/"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "a8d0b246-5a03-4fff-8983-79d3afb906c0",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "d8552dee-8b75-40fd-949f-c5a2fd98dcea",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "fee28bd5-aebc-4219-90a8-59b30a02b309",
+			"key": "dataUsa",
+			"value": "https://datausa.io/api",
+			"type": "string"
+		},
+		{
+			"id": "a0483d5e-6438-4d52-955b-cb88edf57854",
+			"key": "uraniumDataUsa",
+			"value": "https://uranium.datausa.io/api",
+			"type": "string"
+		},
+		{
+			"id": "a1cf43e8-e225-486f-a037-151f42ef4b69",
+			"key": "dataUsaSearch",
+			"value": "https://datausa.io/api/searchLegacy",
+			"type": "string"
+		}
+	]
+}
