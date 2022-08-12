@@ -263,8 +263,6 @@
 							"script": {
 								"id": "f3383219-63d5-4cf8-b2a1-59f35d948465",
 								"exec": [
-									"setTimeout(function(){}, 1000);\r",
-									"\r",
 									"const response = pm.response.json();\r",
 									"\r",
 									"var Categories = [\"Carnegie%20Parent\",\"Carnegie\",\"University\"];\r",
@@ -628,19 +626,19 @@
 	],
 	"variable": [
 		{
-			"id": "75f8a04c-c1d8-4a92-b3e0-4bec404bfdea",
+			"id": "19acd57d-a4af-4f8c-aff1-2a67241801a5",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "56da7980-09a4-49af-b176-97f9e74181d2",
+			"id": "0fd3dc55-5330-4dd0-896e-6419817346ca",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "f4b1a1d6-206a-41d2-8c8c-e0b252437ca7",
+			"id": "7ee45db3-0164-47ce-b396-d51b1ba0d42e",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
