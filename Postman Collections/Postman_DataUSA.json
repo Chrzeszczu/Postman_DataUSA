@@ -16,7 +16,7 @@
 							"script": {
 								"id": "f3383219-63d5-4cf8-b2a1-59f35d948465",
 								"exec": [
-									"setTimeout(function(){}, 1000)\r",
+									"setTimeout(function(){}, 1000);\r",
 									"const response = pm.response.json();\r",
 									"\r",
 									"var Categories = [\"State\",\"Congressional%20District\",\"MSA\",\"PUMA\",\"County\",\"Place\"];\r",
@@ -624,19 +624,19 @@
 	],
 	"variable": [
 		{
-			"id": "cc763a4e-7fba-4020-a2cd-60688cdff2dd",
+			"id": "60118ce3-648e-4862-9752-090acca2a0cb",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "7d6308be-2d40-44fc-9ea4-9bc15ca46304",
+			"id": "d50b6d01-d8f9-4443-b18e-2d2e27fb0f97",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "ba6af20b-c314-48a3-856a-45a81e1a63e9",
+			"id": "f3040fe3-4235-4149-8526-478482d06420",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
