@@ -83,8 +83,8 @@
 									"\r",
 									"\r",
 									"var Categories = [\"Industry%20Sub-Sector\",\"Industry%20Sector\",\"Industry%20Group\"];\r",
-									"pm.environment.set('CategoriesF', Categories);\r",
-									"pm.environment.set(\"CATEGORY\", Categories[Math.floor(Math.random() * Categories.length)]);\r",
+									"pm.globals.set('CategoriesF', Categories);\r",
+									"pm.globals.set(\"CATEGORY\", Categories[Math.floor(Math.random() * Categories.length)]);\r",
 									"\r",
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
@@ -633,19 +633,19 @@
 	],
 	"variable": [
 		{
-			"id": "a900f648-c034-456f-90cf-f9ad6d3c503b",
+			"id": "4eadea4c-245c-4826-b68f-04856be2b5c9",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "0f4722bf-b951-448f-aaf7-bba4d9a84371",
+			"id": "68357bc4-52e3-4898-b9c7-d2bc0b60147f",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "7491e23f-c01c-4461-8073-dc607e2395f7",
+			"id": "e62f6665-0233-4dda-b6f1-a23675afdbda",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
