@@ -31,7 +31,7 @@
 							}
 						}
 					],
-					"_postman_id": "327b719f-1034-4e15-b7d9-03d174330f06",
+					"id": "327b719f-1034-4e15-b7d9-03d174330f06",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -94,7 +94,7 @@
 							}
 						}
 					],
-					"_postman_id": "54755c17-b409-424c-ad45-1cdbb96bf536",
+					"id": "54755c17-b409-424c-ad45-1cdbb96bf536",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -155,7 +155,7 @@
 							}
 						}
 					],
-					"_postman_id": "b51ac8de-cde6-4e45-bd23-707b41ca8728",
+					"id": "b51ac8de-cde6-4e45-bd23-707b41ca8728",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -209,14 +209,14 @@
 									"const response = pm.response.json();\r",
 									"\r",
 									"var Categories = [\"CIP2\",\"CIP4\",\"CIP6\"];\r",
-									"pm.globals.set('Cities', Categories);\r",
+									"pm.globals.set('Categories', Categories);\r",
 									"pm.globals.set(\"CATEGOTY\", Categories[Math.floor(Math.random() * Categories.length)]);"
 								],
 								"type": "text/javascript"
 							}
 						}
 					],
-					"_postman_id": "c029c62a-ebff-4ed0-9f25-81e79af1fb91",
+					"id": "c029c62a-ebff-4ed0-9f25-81e79af1fb91",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -278,7 +278,7 @@
 							}
 						}
 					],
-					"_postman_id": "b40d5058-cb1b-4fba-90ef-b319351b1591",
+					"id": "b40d5058-cb1b-4fba-90ef-b319351b1591",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -339,7 +339,7 @@
 							}
 						}
 					],
-					"_postman_id": "69c086c4-4816-4e68-90ab-d33124b036a1",
+					"id": "69c086c4-4816-4e68-90ab-d33124b036a1",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -379,7 +379,7 @@
 					"response": []
 				}
 			],
-			"_postman_id": "d4e3d946-5b6a-4c81-9ad5-b6968715d684"
+			"id": "d4e3d946-5b6a-4c81-9ad5-b6968715d684"
 		},
 		{
 			"name": "Nation Population",
@@ -401,7 +401,7 @@
 					}
 				}
 			],
-			"_postman_id": "439b7662-65b7-43a0-a652-a193e8f53353",
+			"id": "439b7662-65b7-43a0-a652-a193e8f53353",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -456,7 +456,7 @@
 					}
 				}
 			],
-			"_postman_id": "4a6bc37b-c138-4c9b-a2d4-62de43f152da",
+			"id": "4a6bc37b-c138-4c9b-a2d4-62de43f152da",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -487,7 +487,7 @@
 					}
 				}
 			],
-			"_postman_id": "ae29d90a-21f2-4ccf-866d-7bfe27757ee2",
+			"id": "ae29d90a-21f2-4ccf-866d-7bfe27757ee2",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -507,8 +507,7 @@
 					"variable": [
 						{
 							"key": "state",
-							"value": "washington",
-							"type": "string"
+							"value": "washington"
 						}
 					]
 				}
@@ -535,7 +534,7 @@
 					}
 				}
 			],
-			"_postman_id": "ece0ba33-34ee-42b1-a2d1-a201810724a4",
+			"id": "ece0ba33-34ee-42b1-a2d1-a201810724a4",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -562,8 +561,7 @@
 					"variable": [
 						{
 							"key": "MM-DD-RRRR_NAME",
-							"value": "06-12-2017_medicare-physicians",
-							"type": "string"
+							"value": "06-12-2017_medicare-physicians"
 						}
 					]
 				}
@@ -590,7 +588,7 @@
 					}
 				}
 			],
-			"_postman_id": "d40e741f-5229-4fa2-bd44-45445ae682ad",
+			"id": "d40e741f-5229-4fa2-bd44-45445ae682ad",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -626,19 +624,19 @@
 	],
 	"variable": [
 		{
-			"id": "fee28bd5-aebc-4219-90a8-59b30a02b309",
+			"id": "636dc42d-9fb7-44b7-b3d8-fb664fd20bb3",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "a0483d5e-6438-4d52-955b-cb88edf57854",
+			"id": "3bac0cbe-a257-4548-a356-11f28cf84883",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "a1cf43e8-e225-486f-a037-151f42ef4b69",
+			"id": "f9c0ae46-f082-41c1-8404-098c9cb1891d",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
