@@ -87,7 +87,7 @@
 									"\r",
 									"\r",
 									"var Categories = [\"Industry%20Sub-Sector\",\"Industry%20Sector\",\"Industry%20Group\"];\r",
-									"pm.globals.set('Cities', Categories);\r",
+									"pm.globals.set('Categories', Categories);\r",
 									"pm.globals.set(\"CATEGOTY\", Categories[Math.floor(Math.random() * Categories.length)]);"
 								],
 								"type": "text/javascript"
@@ -624,19 +624,19 @@
 	],
 	"variable": [
 		{
-			"id": "f7145dc3-d2f1-464f-a321-c9ddda365f19",
+			"id": "7eb0646f-a484-440f-8551-513cfeee82b8",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "b898637d-6a27-47ee-9f5f-5f8cc73d8432",
+			"id": "b1d8054a-fd22-4cdb-9638-d9a9e424b37c",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "94475c86-d04a-462e-9542-d35deb3240b1",
+			"id": "32e38a4e-13c8-4992-ad10-557636ec87bc",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
