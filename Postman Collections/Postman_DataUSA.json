@@ -263,15 +263,15 @@
 							"script": {
 								"id": "f3383219-63d5-4cf8-b2a1-59f35d948465",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
 									"const response = pm.response.json();\r",
 									"\r",
 									"var Categories = [\"Carnegie%20Parent\",\"Carnegie\",\"University\"];\r",
 									"pm.globals.set('Categories', Categories);\r",
-									"pm.globals.set(\"CATEGOTY\", Categories[Math.floor(Math.random() * Categories.length)]);"
+									"pm.globals.set(\"CATEGOTY\", Categories[Math.floor(Math.random() * Categories.length)]);\r",
+									"\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
 								],
 								"type": "text/javascript"
 							}
@@ -623,19 +623,19 @@
 	],
 	"variable": [
 		{
-			"id": "308f7a9b-d427-4b66-8566-5bebf9016c02",
+			"id": "7a60f1c6-3696-45bb-baa3-cc3c994f5c5c",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "c1f6e824-2bd9-478c-b10b-482d8f131069",
+			"id": "69297ddf-3dc5-4b76-8d2d-944413533fc2",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "6c53ae48-653c-4e73-87fa-c8dc946f3321",
+			"id": "85e47d9b-62b8-46ee-a2f6-43dd9432e99d",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
