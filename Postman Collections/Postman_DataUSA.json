@@ -113,6 +113,15 @@
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"hierarchy\": \"{{CATEGORY}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "{{dataUsaSearch}}/?limit=100&dimension=PUMS%20Industry&hierarchy={{CATEGORY}}&q=",
 							"host": [
@@ -645,19 +654,19 @@
 	],
 	"variable": [
 		{
-			"id": "3fccb664-284f-4c09-84e2-78f10a7d446c",
+			"id": "836dbe4b-768f-40f6-abf4-77c588ba88e6",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "8d8d624b-4a22-45c3-9137-68d99f48847b",
+			"id": "a378ea17-aab9-46e3-a93b-6b40fe0dd829",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "1c2d49c3-4238-4546-86d8-252236e62bc7",
+			"id": "27f78b07-329b-4f5a-88f4-451bd656e4ed",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
