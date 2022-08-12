@@ -201,15 +201,15 @@
 							"script": {
 								"id": "f3383219-63d5-4cf8-b2a1-59f35d948465",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
 									"const response = pm.response.json();\r",
 									"\r",
 									"var Categories = [\"CIP2\",\"CIP4\",\"CIP6\"];\r",
 									"pm.globals.set('Categories', Categories);\r",
-									"pm.globals.set(\"CATEGOTY\", Categories[Math.floor(Math.random() * Categories.length)]);"
+									"pm.globals.set(\"CATEGOTY\", Categories[Math.floor(Math.random() * Categories.length)]);\r",
+									"\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
 								],
 								"type": "text/javascript"
 							}
@@ -623,19 +623,19 @@
 	],
 	"variable": [
 		{
-			"id": "d8a3f8ad-f335-4d64-b6ab-5cee0dd4a26d",
+			"id": "308f7a9b-d427-4b66-8566-5bebf9016c02",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "46b0b530-3db0-48e2-92ac-c907426a2117",
+			"id": "c1f6e824-2bd9-478c-b10b-482d8f131069",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "20c36736-8f7b-49d1-91e5-d37c9fbe784d",
+			"id": "6c53ae48-653c-4e73-87fa-c8dc946f3321",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
