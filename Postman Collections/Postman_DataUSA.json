@@ -39,6 +39,15 @@
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"hierarchy\": \"{{CATEGORY}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "{{dataUsaSearch}}/?limit=100&dimension=Geography&hierarchy={{CATEGORY}}&q=",
 							"host": [
@@ -636,19 +645,19 @@
 	],
 	"variable": [
 		{
-			"id": "54221874-fe7d-4052-93b3-bb6d4aaa7e79",
+			"id": "40c17352-0b07-4103-bc33-da99c1ebedbf",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "69c91a3a-8a35-47d5-b9dc-1aad9ed5cabd",
+			"id": "ebc0dc96-72b6-4291-bc70-eff874d794d3",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "f724b308-a935-4aa7-8a18-c446c252de2c",
+			"id": "d7fad62f-a5ac-4735-ad22-3f83b1fb0226",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
