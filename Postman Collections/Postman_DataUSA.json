@@ -271,7 +271,7 @@
 									"const response = pm.response.json();\r",
 									"\r",
 									"var Categories = [\"Carnegie%20Parent\",\"Carnegie\",\"University\"];\r",
-									"pm.globals.set('Cities', Categories);\r",
+									"pm.globals.set('Categories', Categories);\r",
 									"pm.globals.set(\"CATEGOTY\", Categories[Math.floor(Math.random() * Categories.length)]);"
 								],
 								"type": "text/javascript"
@@ -624,19 +624,19 @@
 	],
 	"variable": [
 		{
-			"id": "636dc42d-9fb7-44b7-b3d8-fb664fd20bb3",
+			"id": "f372153a-e82e-4ff8-baab-53f0ed8d82b5",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "3bac0cbe-a257-4548-a356-11f28cf84883",
+			"id": "922222fc-669c-4cc8-bf3c-2eca326f8484",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "f9c0ae46-f082-41c1-8404-098c9cb1891d",
+			"id": "c6fc36f4-c684-431b-9c16-30046ef3ae95",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
