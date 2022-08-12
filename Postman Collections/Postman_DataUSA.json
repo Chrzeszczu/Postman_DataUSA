@@ -267,7 +267,7 @@
 									"\r",
 									"var Categories = [\"Carnegie%20Parent\",\"Carnegie\",\"University\"];\r",
 									"pm.globals.set('CategoriesF', Categories);\r",
-									"pm.globals.set(\"CATEGOTY\", CategoriesF[Math.floor(Math.random() * Categories.length)]);\r",
+									"pm.globals.set(\"CATEGOTY\", Categories[Math.floor(Math.random() * Categories.length)]);\r",
 									"\r",
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
@@ -624,19 +624,19 @@
 	],
 	"variable": [
 		{
-			"id": "11cfee36-d512-4531-b934-0eb94274d50c",
+			"id": "7a2febc2-8d50-4f7e-85e0-b53638c44e26",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "cf9263f6-9dcd-4008-b677-64d9e6f0c7ee",
+			"id": "b20c0dc9-47f4-4715-92b6-064bef3882e8",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "a90ef0fe-9cd3-4ade-a33f-e5ca73079857",
+			"id": "2802f8a8-0c8e-4fa6-a45a-d7514fd50c8a",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
