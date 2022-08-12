@@ -204,8 +204,8 @@
 									"const response = pm.response.json();\r",
 									"\r",
 									"var Categories = [\"CIP2\",\"CIP4\",\"CIP6\"];\r",
-									"pm.globals.set('Categories', Categories);\r",
-									"pm.globals.set(\"CATEGOTY\", Categories[Math.floor(Math.random() * Categories.length)]);\r",
+									"pm.globals.set('CategoriesF', Categories);\r",
+									"pm.globals.set(\"CATEGOTY\", CategoriesF[Math.floor(Math.random() * Categories.length)]);\r",
 									"\r",
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
@@ -624,19 +624,19 @@
 	],
 	"variable": [
 		{
-			"id": "bebab2ba-a0b9-444c-8b68-ef0d85294708",
+			"id": "231c3091-922e-45bd-9111-55193f385ce9",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "f3d66769-6283-4c59-b25c-997dfc6f32a3",
+			"id": "cfc254c2-cabc-45f7-86cc-91a1e27c6aa6",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "32da63d5-8df2-4bac-9a70-178d95b8210e",
+			"id": "f681234e-5a37-4642-9c26-61b6e55bae41",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
