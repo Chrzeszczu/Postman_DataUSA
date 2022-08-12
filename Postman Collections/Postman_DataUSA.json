@@ -324,8 +324,6 @@
 							"script": {
 								"id": "f3383219-63d5-4cf8-b2a1-59f35d948465",
 								"exec": [
-									"setTimeout(function(){}, 1000);\r",
-									"\r",
 									"const response = pm.response.json();\r",
 									"\r",
 									"var Categories = [\"NAPCS%20Section\",\"NAPCS%20Group\",\"NAPCS%20Class\"];\r",
@@ -626,19 +624,19 @@
 	],
 	"variable": [
 		{
-			"id": "19acd57d-a4af-4f8c-aff1-2a67241801a5",
+			"id": "be0536ce-7733-4b68-95d4-97c8659376c8",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "0fd3dc55-5330-4dd0-896e-6419817346ca",
+			"id": "ffd269b2-99cd-48ab-bad4-c8864fbd4d98",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "7ee45db3-0164-47ce-b396-d51b1ba0d42e",
+			"id": "7735cae4-1415-4bbf-8e75-08f6ea90f608",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
