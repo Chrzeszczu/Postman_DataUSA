@@ -340,15 +340,25 @@
 								"exec": [
 									"const response = pm.response.json();\r",
 									"\r",
-									"var Categories = [\"Carnegie%20Parent\",\"Carnegie\",\"University\"];\r",
-									"pm.globals.set('CategoriesF', Categories);\r",
-									"pm.globals.set(\"CATEGORY\", Categories[Math.floor(Math.random() * Categories.length)]);\r",
 									"\r",
-									"pm.globals.get(\"CATEGORY\");\r",
 									"\r",
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "39a7e324-c83f-403d-b7d1-c5c80a1526b7",
+								"exec": [
+									"var Categories = [\"Carnegie%20Parent\",\"Carnegie\",\"University\"];\r",
+									"pm.globals.set('CategoriesF', Categories);\r",
+									"pm.globals.set(\"CATEGORY\", Categories[Math.floor(Math.random() * Categories.length)]);\r",
+									"\r",
+									"pm.globals.get(\"CATEGORY\");"
 								],
 								"type": "text/javascript"
 							}
@@ -703,19 +713,19 @@
 	],
 	"variable": [
 		{
-			"id": "d445b634-061d-4ca9-8862-3c787946de73",
+			"id": "dc42fe9c-7a2e-492b-bf83-282c0086e76f",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "5787653b-457a-4f13-9411-72d1fdd0ea5d",
+			"id": "405d6264-5f09-4860-9851-99bd708341af",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "58d12eb6-dffc-491e-9c00-714c28abf4a3",
+			"id": "43309c59-fdd9-4b14-9c71-abe6f273d5f8",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
