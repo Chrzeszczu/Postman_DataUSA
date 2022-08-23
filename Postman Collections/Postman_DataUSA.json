@@ -18,15 +18,25 @@
 								"exec": [
 									"const response = pm.response.json();\r",
 									"\r",
-									"var Categories = [\"State\",\"Congressional%20District\",\"MSA\",\"PUMA\",\"County\",\"Place\"];\r",
-									"pm.globals.set('CategoriesF', Categories);\r",
-									"pm.globals.set(\"CATEGORY\", Categories[Math.floor(Math.random() * Categories.length)]);\r",
-									"\r",
-									"pm.globals.get(\"CATEGORY\");\r",
 									"\r",
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "c8ccd509-7e72-4e5a-a736-89e34a085ce2",
+								"exec": [
+									"\r",
+									"var Categories = [\"State\",\"Congressional%20District\",\"MSA\",\"PUMA\",\"County\",\"Place\"];\r",
+									"pm.globals.set('CategoriesF', Categories);\r",
+									"pm.globals.set(\"CATEGORY\", Categories[Math.floor(Math.random() * Categories.length)]);\r",
+									"\r",
+									"pm.globals.get(\"CATEGORY\");"
 								],
 								"type": "text/javascript"
 							}
@@ -663,19 +673,19 @@
 	],
 	"variable": [
 		{
-			"id": "ed45a013-1efc-4a5a-92c8-64f8be93d249",
+			"id": "f7154f00-308c-4557-86ca-335e4e0711fb",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "733efca5-5cc6-4fa0-b490-797470b92a64",
+			"id": "16d5194a-ab5c-4983-8b5e-404a8952459f",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "b08ec7dc-b7e0-4e7a-a6f2-4ba0e652d295",
+			"id": "164375fa-42ce-4fd3-af33-fcd57857ee03",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
