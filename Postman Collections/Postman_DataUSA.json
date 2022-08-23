@@ -413,11 +413,7 @@
 								"exec": [
 									"const response = pm.response.json();\r",
 									"\r",
-									"var Categories = [\"NAPCS%20Section\",\"NAPCS%20Group\",\"NAPCS%20Class\"];\r",
-									"pm.globals.set('CategoriesF', Categories);\r",
-									"pm.globals.set(\"CATEGORY\", Categories[Math.floor(Math.random() * Categories.length)]);\r",
 									"\r",
-									"pm.globals.get(\"CATEGORY\");\r",
 									"\r",
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
@@ -713,19 +709,19 @@
 	],
 	"variable": [
 		{
-			"id": "dc42fe9c-7a2e-492b-bf83-282c0086e76f",
+			"id": "45a5665a-92fe-4bfb-bdf6-5c86d7a0f0ae",
 			"key": "dataUsa",
 			"value": "https://datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "405d6264-5f09-4860-9851-99bd708341af",
+			"id": "ae1d08c4-01cc-4003-b35f-3d8d2daeda8b",
 			"key": "uraniumDataUsa",
 			"value": "https://uranium.datausa.io/api",
 			"type": "string"
 		},
 		{
-			"id": "43309c59-fdd9-4b14-9c71-abe6f273d5f8",
+			"id": "d2b5b63d-99bb-4255-af73-b593e3b44526",
 			"key": "dataUsaSearch",
 			"value": "https://datausa.io/api/searchLegacy",
 			"type": "string"
